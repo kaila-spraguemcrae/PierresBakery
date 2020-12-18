@@ -36,9 +36,17 @@ This project uses the following technologies:
 
 | Test | Input | Output |
 | :------------- | :------------- | :------------- |
-| **** |  |  |
-|  |  |  |
-| **** |  |  |
+| **Order** |  |  |
+| It should create an instance of Order | Order testOrder = new Order(); | typeof(testOrder) == Order |
+| It should return given Title | "Pastry Order" | "Pastry Order" |
+| It should return given Description | "Order of 20 Pastries" | "Order of 20 Pastries" |
+| It should return given Price | 34 | 34 |
+| It should return given Date | "2.18.2020" | "12.18.2020" |
+| **Vendor** |  |  |
+| It should create an instance of Vendor | Vendor testVendor = new Vendor(); | typeof(testVendor) == Vendor |
+| It should return given Name | "Mary's Cafe" | "Mary's Cafe" |
+| It should return given Description | "Small local cafe" | "Small local cafe" |
+| It should return List of Orders | testOrder = "Pastry Order" // testOrder2 = "Bread Order" | "Pastry Order", "Bread Order" |
 |  |  |  |
 
 </details>
