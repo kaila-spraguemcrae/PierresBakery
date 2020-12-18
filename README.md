@@ -42,15 +42,25 @@ This project uses the following technologies:
 | It should return given Description | "Order of 20 Pastries" | "Order of 20 Pastries" |
 | It should return given Price | 34 | 34 |
 | It should return given Date | "2.18.2020" | "12.18.2020" |
+| It should instantiate Order with and Id | testOrder2. Id | 2 |
 | **Order.GetAll()** |  |  |
 | It should return empty static List |  | *Empty List* |
 | It should return static List with instances of Order object| testOrder = Title, Description, Price, Date // testOrder2 = Title, Description, Price, Date | {testOrder, testOrder2} |
+| **Order.Find()** |  |  |
+| It should return instance of Order by Id | Order.Find(2) | testOrder2 |
 | **Vendor** |  |  |
 | It should create an instance of Vendor | Vendor testVendor = new Vendor(); | typeof(testVendor) == Vendor |
 | It should return given Name | "Mary's Cafe" | "Mary's Cafe" |
 | It should return given Description | "Small local cafe" | "Small local cafe" |
-| It should return List of Orders | testOrder = "Pastry Order" // testOrder2 = "Bread Order" | "Pastry Order", "Bread Order" |
+| It should instantiate Vendor with an Id | testVendor. Id | Id |
+| **Vendor.AddOrder(Order order)** |  |  |
+| It should add instances of Order to an instance of Category's List<Order> |  |  |
+| **Vendor.GetAll()** |  |  |
 | It should return empty static List |  | *Empty List* |
+| It should return static List with instances of Vendor object| testVendor = Name, Description // testVendor2 = Name, Description | {testVendor, testVendor} |
+| **Vendor.Find()** |  |  |
+| It should return instance of Vendor by Id | Vendor.Find(2) | testVendor2 |
+
 |  |  |  |
 
 </details>

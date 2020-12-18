@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System;
 using PierresBakery.Models;
 
 namespace PierresBakery.Tests
@@ -27,5 +28,13 @@ namespace PierresBakery.Tests
       Vendor testVendor = new Vendor("test", description);
       Assert.AreEqual(description, testVendor.Description);
     }
+    // [TestMethod]
+    // public void GetOrderList_ReturnList_OrderList()
+    // {
+    //   Order testOrder = new Order("test","test",0,"test");
+    //   Order testOrder2 = new Order("test","test",0,"test");
+    //   List<Order> testList = new List<Order>{ testOrder, testOrder2 };
+    //   CollectionAssert.AreEqual(testList, Order.GetAll());
+    // }
   }
 }
