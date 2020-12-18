@@ -54,7 +54,11 @@ This project uses the following technologies:
 | It should return given Description | "Small local cafe" | "Small local cafe" |
 | It should instantiate Vendor with an Id | testVendor. Id | Id |
 | **Vendor.AddOrder(Order order)** |  |  |
-| It should add instances of Order to an instance of Category's List<Order> |  |  |
+| It should add instances of Order to an instance of Category's List<Order> | Vendor testVendor = new Vendor("test", "test"); |  |
+|  | Order testOrder = new Order("test","test",0,"test"); |  |
+|  | testVendor.Orders.Add(testOrder); |  |
+|  | List<Order> testList = new List<Order>{ testOrder, testOrder2 }; |  |
+|  | testList == testVendor.Orders | true |
 | **Vendor.GetAll()** |  |  |
 | It should return empty static List |  | *Empty List* |
 | It should return static List with instances of Vendor object| testVendor = Name, Description // testVendor2 = Name, Description | {testVendor, testVendor} |

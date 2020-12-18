@@ -36,7 +36,7 @@ namespace PierresBakery.Tests
       testVendor.Orders.Add(testOrder);
       Order testOrder2 = new Order("test","test",0,"test");
       testVendor.Orders.Add(testOrder2);
-      List<Order> testList = new List<Order>{ testOrder };
+      List<Order> testList = new List<Order>{ testOrder, testOrder2 };
       CollectionAssert.AreEqual(testList, testVendor.Orders);
     }
   }
