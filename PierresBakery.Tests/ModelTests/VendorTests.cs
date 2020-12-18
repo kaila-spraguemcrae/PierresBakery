@@ -44,8 +44,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetAll_ReturnEmptyList_VendorList()
     {
-      Vendor testVendor = new Vendor("test", "test");
-      List<Vendor> testList = new List<Vendor> {testVendor};
+      List<Vendor> testList = new List<Vendor> {};
       CollectionAssert.AreEqual(testList, Vendor.GetAll());
     }
     
