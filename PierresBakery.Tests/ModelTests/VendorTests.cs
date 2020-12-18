@@ -39,13 +39,20 @@ namespace PierresBakery.Tests
       List<Order> testList = new List<Order>{ testOrder, testOrder2 };
       CollectionAssert.AreEqual(testList, testVendor.Orders);
     } 
-
-    //MUST ADD STATIC LIST FIRST!!!!>.<
     [TestMethod]
     public void GetAll_ReturnEmptyList_VendorList()
     {
       List<Vendor> testList = new List<Vendor> {};
       CollectionAssert.AreEqual(testList, Vendor.GetAll());
+    }
+    [TestMethod]
+    public void GetAll_ReturnVendorList_VendorList()
+    {
+      Vendor testVendor = new Vendor("test", "test");
+      Vendor testVendor2 = new Vendor("test", "test");
+      List<Vendor> testList = new List<Vendor> { testVendor, testVendor2 };
+      CollectionAssert.AreEqual(testList, Vendor.GetAll());
+
     }
     
   }
