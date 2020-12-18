@@ -6,7 +6,7 @@ namespace PierresBakery.Models
 
     public Vendor(string name)
     {
-      Name = "name";
+      Name = name;
     }
   }
 }
