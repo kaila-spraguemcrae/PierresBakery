@@ -63,5 +63,12 @@ namespace PierresBakery.Tests
       Vendor testVendor = new Vendor("test", "test");
       Assert.AreEqual(1, testVendor.Id);
     }
+    [TestMethod]
+    public void Find_ReturnVendorById_Vendor()
+    {
+      Vendor testVendor = new Vendor("test", "test");
+      Vendor testVendor2 = new Vendor("test", "test");
+      Assert.AreEqual(testVendor2, Vendor.Find(2));
+    }
   }
 }
