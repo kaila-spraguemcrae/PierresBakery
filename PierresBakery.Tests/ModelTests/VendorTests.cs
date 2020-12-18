@@ -57,6 +57,11 @@ namespace PierresBakery.Tests
       List<Vendor> testList = new List<Vendor> { testVendor, testVendor2 };
       CollectionAssert.AreEqual(testList, Vendor.GetAll());
     }
-    
+    [TestMethod]
+    public void GetId_CreatesIdWhenVendorIsInstantiated_Int()
+    {
+      Vendor testVendor = new Vendor("test", "test");
+      Assert.AreEqual(0, testVendor.Id);
+    }
   }
 }

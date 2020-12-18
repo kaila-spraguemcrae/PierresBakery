@@ -9,7 +9,7 @@ namespace PierresBakery.Models
     public string Name { get; set; }
     public string Description { get; set; }
     public List<Order> Orders { get; set; }
-    // public int Id { get; }
+    public int Id { get; }
 
     public Vendor(string name, string description)
     {
@@ -17,6 +17,7 @@ namespace PierresBakery.Models
       Description = description;
       Orders = new List<Order>{};
       _instances.Add(this);
+      Id = _instances.Count;
     }
     public void AddOrder(Order order)
     {
