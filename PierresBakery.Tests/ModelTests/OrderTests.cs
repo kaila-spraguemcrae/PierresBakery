@@ -65,5 +65,12 @@ namespace PierresBakery.Tests
       Order testOrder = new Order("test","test",0,"test");
       Assert.AreEqual(1, testOrder.Id);
     }
+    [TestMethod]
+    public void Find_ReturnOrderById_Order()
+    {
+      Order testOrder = new Order("test","test",0,"test");
+      Order testOrder2 = new Order("test","test",0,"test");
+      Assert.AreEqual(testOrder2, Order.Find(2));
+    }
   }
 }
