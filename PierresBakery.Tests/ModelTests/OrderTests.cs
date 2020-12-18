@@ -59,5 +59,11 @@ namespace PierresBakery.Tests
       List<Order> testList = new List<Order> {testOrder, testOrder2};
       CollectionAssert.AreEqual(testList, Order.GetAll());
     }
+    [TestMethod]
+    public void GetId_CreatesIdWhenOrderIsInstanticated_Int()
+    {
+      Order testOrder = new Order("test","test",0,"test");
+      Assert.AreEqual(2, testOrder.Id);
+    }
   }
 }
