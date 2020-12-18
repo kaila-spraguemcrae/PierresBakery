@@ -52,7 +52,7 @@ This project uses the following technologies:
 | It should create an instance of Vendor | Vendor testVendor = new Vendor(); | typeof(testVendor) == Vendor |
 | It should return given Name | "Mary's Cafe" | "Mary's Cafe" |
 | It should return given Description | "Small local cafe" | "Small local cafe" |
-| It should instantiate Vendor with an Id | testVendor. Id | Id |
+| It should instantiate Vendor with an Id | testVendor2. Id | 2 |
 | **Vendor.AddOrder(Order order)** |  |  |
 | It should add instances of Order to an instance of Category's List<Order> | Vendor testVendor = new Vendor("test", "test"); |  |
 |  | Order testOrder = new Order("test","test",0,"test"); |  |

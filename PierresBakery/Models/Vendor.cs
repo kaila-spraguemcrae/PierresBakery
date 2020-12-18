@@ -5,9 +5,11 @@ namespace PierresBakery.Models
 {
   public class Vendor
   {
+    private static List<Vendor> _instances = new List<Vendor> {};
     public string Name { get; set; }
     public string Description { get; set; }
     public List<Order> Orders { get; set; }
+    // public int Id { get; }
 
     public Vendor(string name, string description)
     {
@@ -18,6 +20,10 @@ namespace PierresBakery.Models
     public void AddOrder(Order order)
     {
       Orders.Add(order);
+    }
+    public static List<Vendor> GetAll()
+    {
+      return _instances;
     }
   }
 }
