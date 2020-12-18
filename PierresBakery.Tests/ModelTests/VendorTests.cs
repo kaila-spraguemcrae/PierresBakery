@@ -61,7 +61,7 @@ namespace PierresBakery.Tests
     public void GetId_CreatesIdWhenVendorIsInstantiated_Int()
     {
       Vendor testVendor = new Vendor("test", "test");
-      Assert.AreEqual(0, testVendor.Id);
+      Assert.AreEqual(1, testVendor.Id);
     }
   }
 }
