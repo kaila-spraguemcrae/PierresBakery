@@ -12,7 +12,7 @@ namespace PierresBakery.Models
       Title = title;
       Description = description;
       Price = price;
-      Date = "date";
+      Date = date;
     }
   }
 }
