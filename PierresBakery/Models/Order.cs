@@ -19,9 +19,7 @@ namespace PierresBakery.Models
     }
     public static List<Order> GetAll()
     {
-      Order testOrder = new Order("test", "test", 0, "test");
-      List<Order> test = new List<Order>{testOrder};
-      return test;
+      return _instances;
     }
   }
 }
