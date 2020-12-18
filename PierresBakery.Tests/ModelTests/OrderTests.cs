@@ -63,7 +63,7 @@ namespace PierresBakery.Tests
     public void GetId_CreatesIdWhenOrderIsInstanticated_Int()
     {
       Order testOrder = new Order("test","test",0,"test");
-      Assert.AreEqual(2, testOrder.Id);
+      Assert.AreEqual(1, testOrder.Id);
     }
   }
 }
