@@ -1,7 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProjectName.Controllers
+namespace PierresBakery.Controllers
 {
   public class HomeController : Controller
   {
