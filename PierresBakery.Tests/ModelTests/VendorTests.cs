@@ -28,13 +28,16 @@ namespace PierresBakery.Tests
       Vendor testVendor = new Vendor("test", description);
       Assert.AreEqual(description, testVendor.Description);
     }
-    // [TestMethod]
-    // public void GetOrderList_ReturnList_OrderList()
-    // {
-    //   Order testOrder = new Order("test","test",0,"test");
-    //   Order testOrder2 = new Order("test","test",0,"test");
-    //   List<Order> testList = new List<Order>{ testOrder, testOrder2 };
-    //   CollectionAssert.AreEqual(testList, Order.GetAll());
-    // }
+    [TestMethod]
+    public void AddOrder_ReturnList_OrderList()
+    {
+      Vendor testVendor = new Vendor("test", "test");
+      Order testOrder = new Order("test","test",0,"test");
+      testVendor.Orders.Add(testOrder);
+      Order testOrder2 = new Order("test","test",0,"test");
+      testVendor.Orders.Add(testOrder2);
+      List<Order> testList = new List<Order>{ testOrder };
+      CollectionAssert.AreEqual(testList, testVendor.Orders);
+    }
   }
 }
