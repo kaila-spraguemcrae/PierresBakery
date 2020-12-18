@@ -1,12 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System;
 using PierresBakery.Models;
 
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class OrderTests
+  public class OrderTests : IDisposable
   {
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
@@ -44,6 +49,14 @@ namespace PierresBakery.Tests
     public void GetAll_ReturnEmptyOrderList_OrderList()
     {
       List<Order> testList = new List<Order> {};
+      CollectionAssert.AreEqual(testList, Order.GetAll());
+    }
+    [TestMethod]
+    public void GetAll_ReturnOrderList_OrderList()
+    {
+      Order testOrder = new Order("test","test",0,"test");
+      Order testOrder2 = new Order("test","test",0,"test");
+      List<Order> testList = new List<Order> {testOrder};
       CollectionAssert.AreEqual(testList, Order.GetAll());
     }
   }

@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+using System;
 namespace PierresBakery.Models
 {
   public class Order
@@ -16,10 +16,15 @@ namespace PierresBakery.Models
       Description = description;
       Price = price;
       Date = date;
+      _instances.Add(this);
     }
     public static List<Order> GetAll()
     {
       return _instances;
+    }
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
   }
 }
