@@ -8,7 +8,7 @@ namespace PierresBakery.Models
     public Order(string title, string description)
     {
       Title = title;
-      Description = "test";
+      Description = description;
     }
   }
 }
