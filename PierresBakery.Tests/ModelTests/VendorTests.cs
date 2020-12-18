@@ -6,8 +6,12 @@ using PierresBakery.Models;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class VendorTests
+  public class VendorTests : IDisposable
   {
+    public void Dispose()
+    {
+      Vendor.ClearAll();
+    }
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
@@ -52,7 +56,6 @@ namespace PierresBakery.Tests
       Vendor testVendor2 = new Vendor("test", "test");
       List<Vendor> testList = new List<Vendor> { testVendor, testVendor2 };
       CollectionAssert.AreEqual(testList, Vendor.GetAll());
-
     }
     
   }
