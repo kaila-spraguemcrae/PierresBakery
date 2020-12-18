@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using PierresBakery.Models;
 
 namespace PierresBakery.Tests
@@ -38,6 +39,12 @@ namespace PierresBakery.Tests
       string date = "12.18.2020";
       Order testOrder = new Order("test", "test", 0, date);
       Assert.AreEqual(date, testOrder.Date);
+    }
+    [TestMethod]
+    public void GetAll_ReturnEmptyOrderList_OrderList()
+    {
+      List<Order> testList = new List<Order> {};
+      CollectionAssert.AreEqual(testList, Order.GetAll());
     }
   }
 }

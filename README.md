@@ -42,11 +42,15 @@ This project uses the following technologies:
 | It should return given Description | "Order of 20 Pastries" | "Order of 20 Pastries" |
 | It should return given Price | 34 | 34 |
 | It should return given Date | "2.18.2020" | "12.18.2020" |
+| **Order.GetAll()** |  |  |
+| It should return empty static List |  | *Empty List* |
+| It should return static List with instances of Order object| testOrder = Title, Description, Price, Date // testOrder2 = Title, Description, Price, Date | {testOrder, testOrder2} |
 | **Vendor** |  |  |
 | It should create an instance of Vendor | Vendor testVendor = new Vendor(); | typeof(testVendor) == Vendor |
 | It should return given Name | "Mary's Cafe" | "Mary's Cafe" |
 | It should return given Description | "Small local cafe" | "Small local cafe" |
 | It should return List of Orders | testOrder = "Pastry Order" // testOrder2 = "Bread Order" | "Pastry Order", "Bread Order" |
+| It should return empty static List |  | *Empty List* |
 |  |  |  |
 
 </details>
