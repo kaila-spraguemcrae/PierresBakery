@@ -1,14 +1,18 @@
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgb(196, 166, 112);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(255, 250, 241);
 }
 
-#Header {
-  position: fixed;
-  bottom: 3px;
-  left: 3px;
-  width: 100%;
-  color: #CCC;
-  background-color: #333;
-  padding: 10px;
+.box {
+  border-top: 2px solid black;
+  padding-top: 5px;
+}
+
+.button-dark {
+  background-color: #000;
+  color: white;
+}
+
+a {
+  color:steelblue;
 }

@@ -4,10 +4,26 @@
     <meta charset="utf-8">
     <title>Pierre's Bakery</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="~/css/styles.css" type="text/css">
   </head>
   <body>
-    @Html.Partial("Header")
+    <nav class="navbar navbar-inverse">  
+        <div class="container-fluid">  
+            <div class="navbar-header">  
+                <a class="navbar-brand"><font color="#fff"><b>Pierre's Bakery</b></font></a>  
+            </div>  
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/vendors">Vendors</a></li>
+                <li><a href="vendors/new">Add Vendor</a></li>
+            </ul>  
+        </div>  
+    </nav> 
+
+
+
+
+
     <div class="container">
     @RenderBody()
     </div>

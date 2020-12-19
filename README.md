@@ -26,7 +26,10 @@ This project uses the following technologies:
 - C# v7.3
 - .NET Core v2.2
 - MS Testing
+- REPL 
 - ASP.NET MVC
+- Git & GitHub
+- Bootstrap
 
 -------------------
 
