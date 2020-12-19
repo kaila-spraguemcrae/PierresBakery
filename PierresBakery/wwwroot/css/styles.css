@@ -1,3 +1,8 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(196, 166, 112);
+}
+
 #Header {
   position: fixed;
   bottom: 3px;
@@ -6,9 +11,4 @@
   color: #CCC;
   background-color: #333;
   padding: 10px;
-}
-
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgb(196, 166, 112);
 }
