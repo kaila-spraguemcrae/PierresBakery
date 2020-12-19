@@ -1,3 +1,17 @@
+@using PierresBakery.Models;
+
 @{
   Layout = "_Layout";
 }
+
+<h1>Order Details</h1>
+
+<h2>@Model["order"].Title</h2>
+<ul>
+  <li>Description: @Model["order"].Description</li>
+  <li>Price: $@Model["order"].Price</li>
+  <li>Date of Order: @Model["order"].Date</li>
+</ul>
+
+<p><a href='/'>Return to Home</a></p>
+ <p><a href='/vendors/@Model["vendor"].Id'>Go to @Model["vendor"].Name</a></p> 
