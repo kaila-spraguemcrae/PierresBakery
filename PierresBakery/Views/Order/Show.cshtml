@@ -5,13 +5,13 @@
 }
 
 <h1>Order Details</h1>
-
-<h2>@Model["order"].Title</h2>
+<div class="box">
+<h3>@Model["order"].Title</h3>
 <ul>
   <li>Description: @Model["order"].Description</li>
   <li>Price: $@Model["order"].Price</li>
   <li>Date of Order: @Model["order"].Date</li>
 </ul>
+</div>
 
-<p><a href='/'>Return to Home</a></p>
- <p><a href='/vendors/@Model["vendor"].Id'>Go to @Model["vendor"].Name</a></p> 
+<h3 class="btn btn-default btn-lg"><a href='/vendors/@Model["vendor"].Id'>Go to @Model["vendor"].Name</a></h3> 

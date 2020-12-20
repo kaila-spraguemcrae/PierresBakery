@@ -1,6 +1,5 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: rgb(255, 250, 241);
 }
 
 .box {
@@ -8,11 +7,11 @@ body {
   padding-top: 5px;
 }
 
-.button-dark {
-  background-color: #000;
-  color: white;
-}
-
 a {
   color:steelblue;
+}
+
+div.col-md-4 {
+  margin: 5px;
+  padding: 5px;
 }

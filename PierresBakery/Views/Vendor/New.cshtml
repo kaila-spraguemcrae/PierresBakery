@@ -5,13 +5,25 @@
 <h1>Add a new Vendor</h1>
 
 <div class="box">
-
   <form action='/vendors' method='post'>
-    <label for="vendorName">Vendor Name</label>
-    <input if="vendorName" name="vendorName" type="text">
-    <label for="vendorDescription">Vendor Description</label>
-    <input if="vendorDescription" name="vendorDescription" type="text">
-    <button type="submit">Add</button>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="input-group">
+          <label for="vendorName">Vendor Name: </label>
+          <input if="vendorName" name="vendorName" type="text">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group">
+          <label for="vendorDescription">Vendor Description: </label>
+          <input if="vendorDescription" name="vendorDescription" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-primary btn-md">Add Vendor</button>
+      </div>
+    </div>
   </form>
-
 </div>

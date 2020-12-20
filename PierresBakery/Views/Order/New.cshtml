@@ -7,19 +7,43 @@
 <h1>Add a new order for @Model.Name </h1>
 <div class="box">
 <form action='/vendors/@Model.Id/orders' method='post'>
-<input id="orderId" name="orderId" type="hidden" value="@Model.Id">
-  <label for="orderTitle">Order Title</label>
-  <input if="orderTitle" name="orderTitle" type="text">
-  <label for="orderDescription">Order Description</label>
-  <input if="orderDescription" name="orderDescription" type="text">
-  <label for="orderPrice">Order Price</label>
-  <input if="orderPrice" name="orderPrice" type="text">
-  <label for="orderDate">Order Date</label>
-  <input if="orderDate" name="orderDate" type="text">
-  <button type="submit">Add</button>
-</form>
+  <input id="orderId" name="orderId" type="hidden" value="@Model.Id">
 
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group">
+        <label for="orderPrice">Order Name:</label> 
+        <input id="orderTitle" name="orderTitle" type="text" class="form-control" placeholder="Order Name">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+        <label for="orderPrice">Order Description:</label> 
+        <input id="orderDescription" name="orderDescription" type="text" class="form-control" placeholder="Order Description">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group">
+        <label for="orderPrice">Order Price:</label> 
+        <input id="orderPrice" name="orderPrice" type="text" class="form-control" placeholder="Order Price">
+      </div>
+    </div>  
+    <div class="col-md-4">
+      <div class="input-group">
+        <label for="orderPrice">Order Date:</label> 
+        <input id="orderDate" name="orderDate" type="text" class="form-control" placeholder="Date of Order">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <button type="submit" class="btn btn-primary btn-md">Add Order</button>
+    </div>
+  </div>
+</form>
 </div>
 
-<p><a href='/'>Return home</a></p>
-<p><a href='/vendors/@Model.Id'>Go to @Model.Name</a></p>
+<h3 class="btn btn-default btn-lg"><a href='/vendors/@Model.Id'>Go to back to @Model.Name</a></h3>
