@@ -4,7 +4,7 @@
 </h1>
 
 <p align = "center">
-#### This MVC application will allow a user to track vendors who have placed orders, 12.18.2020
+This MVC application will allow a user to track vendors who have placed orders, 12.18.2020
 </p>
 
 <p align = "center">
